@@ -1,4 +1,4 @@
-site_name: ELIXIR lesson
+site_name: Instructions how to use the ELIXIR-TrP-LessonTemplate-MkDocs
 nav:
     - About: index.md
     - Course Content:
@@ -20,8 +20,8 @@ theme:
     text: Lato
 
 # Repository
-repo_name: ELIXIR-FAIR-Training/ELIXIR-lesson-template
-repo_url: https://github.com/ELIXIR-FAIR-Training/ELIXIR-lesson-template
+repo_name: elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
+repo_url: https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
 edit_uri: edit/main/docs/
 
 plugins:

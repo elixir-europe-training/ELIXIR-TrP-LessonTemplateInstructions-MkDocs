@@ -1,4 +1,4 @@
-## How to add content by using the github editor
+## Using the github editor
 
 First, you will need to be able to edit this repository. Ask for permissions at the repository admins. 
 

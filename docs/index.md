@@ -1,4 +1,4 @@
-# ELIXIR lesson title 
+# Instructions how to use the ELIXIR-TrP-LessonTemplate-MkDocs
 
 ## Authors
 
@@ -7,9 +7,7 @@
 
 #### Description
 [comment]: # (Property in Bioschema: description)
-Add a short description of the training materail should be inserted here.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae libero suscipit massa gravida ornare. Nulla facilisi. Etiam quis metus blandit, sodales ex vel, ultrices erat. Aenean ornare libero sit amet bibendum sodales. Integer lorem mi, auctor in elementum non, pretium id leo. In hac habitasse platea dictumst. Vivamus dignissim leo vitae dolor ultrices congue. Vestibulum vitae nulla maximus, tincidunt augue vitae, tristique felis. Aenean non maximus enim. Pellentesque porta dolor tincidunt condimentum blandit. Cras eu nisi non neque egestas tempor sit amet eu urna. Donec pellentesque ullamcorper odio, sed maximus nisi elementum eu. Praesent at sagittis elit.
 
 #### Target Audience 
 [comment]: # (Property in Bioschema: audience)
