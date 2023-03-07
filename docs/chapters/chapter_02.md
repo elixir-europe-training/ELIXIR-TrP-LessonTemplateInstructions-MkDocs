@@ -34,6 +34,59 @@ After commiting it will take ~30-60 seconds before the website is updated with y
 ## Adding specific elements
 In addition to adding text and other content in markdown, this template is based on the theme [material](https://squidfunk.github.io/mkdocs-material/) which has many fancy extensions, like [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) that can be used as well. 
 
+### Authors
+
+### Boxed sections 
+If you want to highlight some information you can make use of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/). 
+
+Create a box by adding three exclamation marks `!!!` followed by the keyword `info` followed by the desiered title inside  quotation marks `"Title"`. The content of the block follows on the next line, indented by four spaces:
+
+```
+!!! info "Information"
+    This box contains important information
+```
+
+!!! info "Information"
+    This box contains important information
+
+Boxed sections are also used for creating [Exercises](#Exercises).
+
+### Code blocks
+To call out a command or code within a sentence, use single backticks around the code. 
+```markdown
+To create a new line in the document press `Enter`.
+``` 
+will render this:
+To create a new line in the document press `Enter`
+
+To display example code into its own distinct block, use triple backticks ` ``` ` 
+```markdown
+  ``` 
+  this is a basic code block example
+  consisting of
+  3 rows
+  ```
+``` 
+For syntax highlighting, line numbers, titles etc. refer to the material [documentation](https://squidfunk.github.io/mkdocs-material/reference/code-blocks)
+
+### Contributors
+
+### Exercises
+In order to highlight exercises with expandable solutions you can make use of nested [boxed sections](#boxed-sections).
+```
+!!! example "Exercise"
+    This is a question
+
+    ??? success "Solution"
+        this is the soluiton to the question
+```
+
+!!! example "Exercise"
+    This is a question
+
+    ??? success "Solution"
+        this is the soluiton to the question
+
 ### Headings
 In markdown, headings are created by adding one to six `#` followed by a space before your heading text. The number of `#` will indicate the level of the heading. The more you add, the smaller the heading will be.
 
@@ -78,88 +131,15 @@ Resulting in:
     </figure>
 
 
-### Exercises
-In order to highlight exercises with expandable solutions you can make use of nested [boxed sections](#boxed-sections).
-```
-!!! example "Exercise"
-    This is a question
+### Links 
 
-    ??? success "Solution"
-        this is the soluiton to the question
-```
+Inline links are created by wrapping link text in brackets `[ ]`, and then wrapping the URL in parentheses `( )` like this:
 
-!!! example "Exercise"
-    This is a question
+`This lesson template was built for [ELIXIR](https://elixir-europe.org/).`
+This lesson template was built for [ELIXIR](https://elixir-europe.org/)
 
-    ??? success "Solution"
-        this is the soluiton to the question
+Linking to other pages follows the same prinicple but intstead of an URL, the relative path can be used, ie `[Chapter 1](/chapters/chapter_01) ` [Chapter 1](/chapters/chapter_01/).
 
-
-### Boxed sections 
-If you want to highlight some information you can make use of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/). 
-
-Create a box by adding three exclamation marks `!!!` followed by the keyword `info` followed by the desiered title inside  quotation marks `"Title"`. The content of the block follows on the next line, indented by four spaces:
-
-```
-!!! info "Information"
-    This box contains important information
-```
-
-!!! info "Information"
-    This box contains important information
-
-Boxed sections are also used for creating [Exercises](#Exercises).
-
-### Tables 
-
-Tables are created with pipes `|` and hyphens `-`. Hyphens are used to create each column's header, while pipes separate each column. You must include a blank line before your table in order for it to correctly render. If you want to build large tables, have a look at [markdown tables generator](https://www.tablesgenerator.com/markdown_tables).
-
-```yaml
----
-| start 	| end   	| topic   	|
-|-------	|-------	|---------	|
-| 10:00 	| 10:30 	| coffee! 	|
-| 12:00 	| 13:00 	| lunch!  	|
----
-```
-
-| start 	| end   	| topic   	|
-|-------	|-------	|---------	|
-| 10:00 	| 10:30 	| coffee! 	|
-| 12:00 	| 13:00 	| lunch!  	|
-
-
-### References
-
-This website supports bibtex (pandoc style) by using the [bibtex plugin](https://pypi.org/project/mkdocs-bibtex/). In order to add a reference, add it in bibtex format to `references.bib` located in the main directory, cite it in your markdown document with `[@refid]` (for the ten simple rules paper this would be `[@Garcia2020]`), and at the bottom of the page add the line `\bibliography`. You can find an example in `docs/index.md`. 
-
-By using the bibtex plugin https://pypi.org/project/mkdocs-bibtex/, we can use citations. Add your references in `references.bib`, and cite [@hoebelheinrich_nancy_j_2022_6769695] like this:
-
-```
-[@firstauthor_2022]
-```
-
-\bibliography
-
-### Contributors
-
-### Code blocks
-To call out a command or code within a sentence, use single backticks around the code. 
-```markdown
-To create a new line in the document press `Enter`.
-``` 
-will render this:
-To create a new line in the document press `Enter`
-
-To display example code into its own distinct block, use triple backticks ` ``` ` 
-```markdown
-  ``` 
-  this is a basic code block example
-  consisting of
-  3 rows
-  ```
-``` 
-For syntax highlighting, line numbers, titles etc. refer to the material [documentation](https://squidfunk.github.io/mkdocs-material/reference/code-blocks)
 ### Lists
 
 You can make an unordered list by preceding one or more lines of text with <kbd>-</kbd>, <kbd>*</kbd>, or <kbd>+</kbd>. You will need to use the same
@@ -195,16 +175,33 @@ Type space characters in front of your nested list item, until the list marker c
      - Second nested list item
 ```
 
+### References
 
-### Links 
+This website supports bibtex (pandoc style) by using the [bibtex plugin](https://pypi.org/project/mkdocs-bibtex/). In order to add a reference, add it in bibtex format to `references.bib` located in the main directory, cite it in your markdown document with `[@refid]`  and cite [@hoebelheinrich_nancy_j_2022_6769695] like this:
 
-Inline links are created by wrapping link text in brackets `[ ]`, and then wrapping the URL in parentheses `( )` like this:
+```
+[@firstauthor_2022]
+```
 
-`This lesson template was built for [ELIXIR](https://elixir-europe.org/).`
-This lesson template was built for [ELIXIR](https://elixir-europe.org/)
 
-Linking to other pages follows the same prinicple but intstead of an URL, the relative path can be used, ie `[Chapter 1](/chapters/chapter_01) ` [Chapter 1](/chapters/chapter_01/).
- 
+### Tables 
+
+Tables are created with pipes `|` and hyphens `-`. Hyphens are used to create each column's header, while pipes separate each column. You must include a blank line before your table in order for it to correctly render. If you want to build large tables, have a look at [markdown tables generator](https://www.tablesgenerator.com/markdown_tables).
+
+```yaml
+---
+| start 	| end   	| topic   	|
+|-------	|-------	|---------	|
+| 10:00 	| 10:30 	| coffee! 	|
+| 12:00 	| 13:00 	| lunch!  	|
+---
+```
+
+| start 	| end   	| topic   	|
+|-------	|-------	|---------	|
+| 10:00 	| 10:30 	| coffee! 	|
+| 12:00 	| 13:00 	| lunch!  	|
+
 
 ## Adding additional content
 
