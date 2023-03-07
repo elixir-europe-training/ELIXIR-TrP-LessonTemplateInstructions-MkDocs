@@ -2,8 +2,9 @@ site_name: ELIXIR lesson
 nav:
     - About: index.md
     - Course Content:
-      - "How to customize this repository": chapters/chapter_01.md
-      - "How to add content to this template": chapters/chapter_02.md
+      - "How to set up a new repository based on the ELIXIR-TrP-LessonTemplate-MkDocs": chapters/chapter_01.md
+      - "How to customize the ELIXIR-TrP-LessonTemplate-MkDocs": chapters/chapter_02.md
+      - "How to add content using GitHub editor": chapters/chapter_03.md
     
 
 theme:
