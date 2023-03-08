@@ -1,4 +1,4 @@
-## Using the github editor
+## Using the GitHub editor
 
 First, you will need to be able to edit this repository. Ask for permissions at the repository admins. 
 
@@ -9,24 +9,24 @@ The content is written in markdown, [see tutorial](https://docs.github.com/en/ge
 3. clicking on the **edit** buttion:
 
 <figure>
-  <img src="/assets/images/edit_button.png" width="600"/>
+  <img src="/docs/assets/images/edit_button.png" width="600"/>
 </figure>
 
 you can edit the markdown in the `<> Edit file` tab 
 <figure>
-  <img src="/assets/images/edit_md_small.png" width="600"/>
+  <img src="/docs/assets/images/edit_md_small.png" width="600"/>
 </figure>
 
 and review your changes by clicking the `preview` tab.
 <figure>
-  <img src="/assets/images/preview_small.png" width="600"/>
+  <img src="/docs/assets/images/preview_small.png" width="600"/>
 </figure>
 
 
 4. When you have finished, you can directly commit to the main branch. In order to do that, write a commit message that briefly describes your changes, and click the green button with **Commit changes**:
 
 <figure>
-  <img src="/assets/images/commit.png" width="400"/>
+  <img src="/docs/assets/images/commit.png" width="400"/>
 </figure>
 
 After commiting it will take ~30-60 seconds before the website is updated with your changes. The website URL can be found to the right on the first page of the repository. 
