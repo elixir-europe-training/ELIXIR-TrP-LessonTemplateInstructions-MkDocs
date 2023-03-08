@@ -1,10 +1,9 @@
 site_name: Instructions how to use the ELIXIR-TrP-LessonTemplate-MkDocs
 nav:
     - About: index.md
-    - Course Content:
-      - "How to set up a new repository based on the ELIXIR-TrP-LessonTemplate-MkDocs": chapters/chapter_01.md
-      - "How to customize the ELIXIR-TrP-LessonTemplate-MkDocs": chapters/chapter_02.md
-      - "How to add content using GitHub editor": chapters/chapter_03.md
+    - Seting up a new repository: chapters/chapter_01.md
+    - Customize the repository: chapters/chapter_02.md
+    - Adding content using GitHub editor: chapters/chapter_03.md
     
 
 theme:
