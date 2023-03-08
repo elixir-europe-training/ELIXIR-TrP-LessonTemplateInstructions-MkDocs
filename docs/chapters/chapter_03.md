@@ -10,24 +10,24 @@ The content is written in markdown, [see tutorial](https://docs.github.com/en/ge
 
 
 <figure>
-  <img src="/assets/images/edit_button.png" width="600"/>
+  <img src="../../assets/images/edit_button.png" width="600"/>
 </figure>
 
 you can edit the markdown in the `<> Edit file` tab 
 <figure>
-  <img src="/assets/images/edit_md_small.png" width="600"/>
+  <img src="../../assets/images/edit_md_small.png" width="600"/>
 </figure>
 
 and review your changes by clicking the `preview` tab.
 <figure>
-  <img src="/assets/images/preview_small.png" width="600"/>
+  <img src="../../assets/images/preview_small.png" width="600"/>
 </figure>
 
 
 4. When you have finished, you can directly commit to the main branch. In order to do that, write a commit message that briefly describes your changes, and click the green button with **Commit changes**:
 
 <figure>
-  <img src="/assets/images/commit.png" width="400"/>
+  <img src="../../assets/images/commit.png" width="400"/>
 </figure>
 
 After commiting it will take ~30-60 seconds before the website is updated with your changes. The website URL can be found to the right on the first page of the repository. 
@@ -119,7 +119,7 @@ Which would result in:
 
     ```html
     <figure>
-    <img src="/docs/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
+    <img src="../../assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
     <figcaption> Elixir image </figcaption>
     </figure>
     ```
@@ -127,7 +127,7 @@ Which would result in:
 Resulting in: 
 
 <figure>
-  <img src="/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
+  <img src="../../assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
     <figcaption> Elixir image </figcaption>
     </figure>
 
@@ -139,7 +139,7 @@ Inline links are created by wrapping link text in brackets `[ ]`, and then wrapp
 `This lesson template was built for [ELIXIR](https://elixir-europe.org/).`
 This lesson template was built for [ELIXIR](https://elixir-europe.org/)
 
-Linking to other pages follows the same prinicple but intstead of an URL, the relative path can be used, ie `[Chapter 1](/chapters/chapter_01) ` [Chapter 1](/chapters/chapter_01/).
+Linking to other pages follows the same prinicple but intstead of an URL, the relative path can be used, ie `[Chapter 1](/../../chapters/chapter_01) ` [Chapter 1](../../chapters/chapter_01/).
 
 ### Lists
 

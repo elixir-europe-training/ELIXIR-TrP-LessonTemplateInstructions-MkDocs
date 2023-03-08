@@ -17,7 +17,7 @@
 #### 1. Go to settings and select pages on the left side menu
        
 <figure>
-<img src="/assets/images/settings-pages-none.png" width="800"/>
+<img src="../../assets/images/settings-pages-none.png" width="800"/>
 </figure>
 
 1. click on `None`under Branch and select the `gh-pages` branch
@@ -28,7 +28,7 @@
 #### 2. Go to settings and select actions on the left side menu
 
 <figure>
-<img src="/assets/images/settings_actions.png" width="600"/>
+<img src="../../assets/images/settings_actions.png" width="600"/>
 </figure>
     
 1. scroll down to `Workflow permissions`
@@ -38,11 +38,11 @@
 
 1. Go to the `<> Code` tab and click the `About`settings wheel on the right side
     <figure>
-  <img src="/assets/images/repo_about_settings01.png" width="800"/>
+  <img src="../..//assets/images/repo_about_settings01.png" width="800"/>
     </figure>
 2. in the pop-up `Edit repository details`, tick the `Use your GitHub Pages website` to automatically fill the Website URL
     <figure>
-  <img src="/assets/images/repo_about_settings02.png" width="600"/>
+  <img src="../..//assets/images/repo_about_settings02.png" width="600"/>
     </figure>
 3. press `Save changes`
 
