@@ -25,8 +25,6 @@ repo_url: https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplateIns
 edit_uri: edit/main/docs/
 
 plugins:
-  - tags:
-      tags_file: keywords.md
   - search
   - bibtex:
       bib_file: "references.bib"
