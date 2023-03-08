@@ -65,8 +65,14 @@ Go to settings and select `Collaborators` under `Access` in the left side menu
     3. press `Save changes`
 
 
-#### 4. Update repository name and url in the mkdocs.yml file
+#### 4. Update site name, repository name and url in the mkdocs.yml file
 1. Go to the `<> Code` tab and edit the mkdocs.yml file
+2. Update the site name at the top of the file by editing the following
+
+``` yml
+site_name: Instructions how to use the ELIXIR-TrP-LessonTemplate-MkDocs
+```
+
 2. Update the section below with the `repo_name`and `repo_url`
 
 ``` yaml
