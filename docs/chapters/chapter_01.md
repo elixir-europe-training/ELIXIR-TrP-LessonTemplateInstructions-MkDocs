@@ -1,11 +1,17 @@
 # How to set up a new repository based on the ELIXIR-TrP-LessonTemplate-MkDocs"
 
 ## 1.1 Creating a new repository
-- click the green `use template` button
-- choose an organisation where the repository will be hosted
-- choos a name
-- update README
-- add collaborators 
+#### 1. Go to [https://github.com/elixir-europe-training/ELIXIR-TrP-lesson-template](https://github.com/elixir-europe-training/ELIXIR-TrP-lesson-template) 
+1. click the green `use template` button to the top right and choose `Create a new repository`
+2. In the pop-up 
+<figure>
+<img src="../../assets/images/create_from_template.png" width="800"/>
+</figure>
+
+    1. choose an organisation where the repository will be hosted
+    2. choose a name for the new repository
+3. add collaborators 
+4. update README.md
 
 ## 1.2 Using github actions to deploy gh-pages
 #### 1. Go to settings and select pages on the left side menu
@@ -41,7 +47,7 @@
 3. press `Save changes`
 
 
-## 4. Update repository name and url in the mkdocs.yml file
+#### 4. Update repository name and url in the mkdocs.yml file
 ``` yaml
 #Repository
 repo_name: elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
