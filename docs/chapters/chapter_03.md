@@ -8,6 +8,7 @@ The content is written in markdown, [see tutorial](https://docs.github.com/en/ge
 2. clicking on your chapter's md file (e.g. `chapter_10.md`)
 3. clicking on the **edit** buttion:
 
+
 <figure>
   <img src="/docs/assets/images/edit_button.png" width="600"/>
 </figure>
@@ -118,7 +119,7 @@ Which would result in:
 
     ```html
     <figure>
-    <img src="/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
+    <img src="/docs/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
     <figcaption> Elixir image </figcaption>
     </figure>
     ```
@@ -126,7 +127,7 @@ Which would result in:
 Resulting in: 
 
 <figure>
-  <img src="/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
+  <img src="/docs/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
     <figcaption> Elixir image </figcaption>
     </figure>
 
