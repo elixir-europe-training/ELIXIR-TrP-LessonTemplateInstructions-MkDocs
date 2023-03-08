@@ -127,7 +127,7 @@ Which would result in:
 Resulting in: 
 
 <figure>
-  <img src="/docs/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
+  <img src="/assets/images/elixir_image.png" width="600" alt="Image on elixir landing page"/>
     <figcaption> Elixir image </figcaption>
     </figure>
 
