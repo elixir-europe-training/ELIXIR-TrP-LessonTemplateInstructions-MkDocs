@@ -36,6 +36,7 @@ After commiting it will take ~30-60 seconds before the website is updated with y
 In addition to adding text and other content in markdown, this template is based on the theme [material](https://squidfunk.github.io/mkdocs-material/) which has many fancy extensions, like [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) that can be used as well. 
 
 ### Authors
+Add Authors manually to the index.md page.
 
 ### Boxed sections 
 If you want to highlight some information you can make use of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/). 
@@ -71,6 +72,7 @@ To display example code into its own distinct block, use triple backticks ` ``` 
 For syntax highlighting, line numbers, titles etc. refer to the material [documentation](https://squidfunk.github.io/mkdocs-material/reference/code-blocks)
 
 ### Contributors
+Add contributors manually to the index.md page.
 
 ### Exercises
 In order to highlight exercises with expandable solutions you can make use of nested [boxed sections](#boxed-sections).
