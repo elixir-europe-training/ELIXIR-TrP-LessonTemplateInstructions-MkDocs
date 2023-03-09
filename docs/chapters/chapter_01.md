@@ -40,7 +40,7 @@ Go to settings and select `Collaborators` under `Access` in the left side menu
 1. click on `None`under Branch and select the `gh-pages` branch
 2. press `Save`
 
- When the site is deployd, it will take a few minutes, a box on the top will display the url to th live site.
+ When the site is deployed, it will take a few minutes, a box on top will display the url to the live site.
 
 #### 2. Go to settings and select actions in the left side menu
 
