@@ -31,10 +31,10 @@ Go to settings and select `Collaborators` under `Access` in the left side menu
 
 
 ## 1.2 Using github actions to deploy gh-pages
-#### 1. Go to settings and select pages in the left side menu
+#### 1. Go to settings and select `pages` in the left side menu
        
 <figure>
-<img src="../../assets/images/settings-pages-none.png" width="800"/>
+<img src="../../assets/images/settings-pages-02.png" width="800"/>
 </figure>
 
 1. click on `None`under Branch and select the `gh-pages` branch
