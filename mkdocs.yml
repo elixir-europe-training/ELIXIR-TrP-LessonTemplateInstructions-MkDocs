@@ -1,11 +1,9 @@
-site_name: ELIXIR lesson
+site_name: Instructions how to use the ELIXIR-TrP-LessonTemplate-MkDocs
 nav:
     - About: index.md
-    - Course Content:
-      - "1. title of first chapter": chapters/chapter_01.md
-      - "2. title of second chapter": chapters/chapter_02.md
-      - "Follow up training": follow_up_training.md
-      - "References": chapters/references.md
+    - Seting up a new repository: chapters/chapter_01.md
+    - Customize the repository: chapters/chapter_02.md
+    - Adding content using GitHub editor: chapters/chapter_03.md
     
 
 theme:
@@ -21,13 +19,11 @@ theme:
     text: Lato
 
 # Repository
-repo_name: ELIXIR-FAIR-Training/ELIXIR-lesson-template
-repo_url: https://github.com/ELIXIR-FAIR-Training/ELIXIR-lesson-template
+repo_name: elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
+repo_url: https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
 edit_uri: edit/main/docs/
 
 plugins:
-  - tags:
-      tags_file: keywords.md
   - search
   - bibtex:
       bib_file: "references.bib"
