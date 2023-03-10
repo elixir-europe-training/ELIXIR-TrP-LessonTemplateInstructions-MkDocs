@@ -1,4 +1,4 @@
-Instructions for [ELIXIR-TrP-LessonTemplate-MkDocs](https://github.com/elixir-europe-training/ELIXIR-lesson-template) 
+# Instructions for [ELIXIR-TrP-LessonTemplate-MkDocs](https://github.com/elixir-europe-training/ELIXIR-lesson-template) 
 
 The website is generated with [MkDocs](https://www.mkdocs.org/), with the theme [Material](https://squidfunk.github.io/mkdocs-material/).
 
