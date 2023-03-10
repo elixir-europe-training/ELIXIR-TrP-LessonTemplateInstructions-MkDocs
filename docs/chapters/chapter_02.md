@@ -19,7 +19,7 @@ The docs folder contains several subfolders
 ## 1.2 Customizing the new repository
 
 ### About/index page
-Start by adding information to the [About page](../../docs/index.md)
+Start by adding information to the [About page](../index.md)
 
 ### Adding/removing menu items
 The left side navigation menu is specified in the `nav:` section of the `mkdocs.yml`file
