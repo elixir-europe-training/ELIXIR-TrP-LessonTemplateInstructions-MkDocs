@@ -19,7 +19,7 @@ The docs folder contains several subfolders
 ## 1.2 Customizing the new repository
 
 ### About/index page
-Start by adding information to the [About page](../../docs/index.md)
+Start by adding information to the [About page](../index.md)
 
 ### Adding/removing menu items
 The left side navigation menu is specified in the `nav:` section of the `mkdocs.yml`file
@@ -51,13 +51,39 @@ copyright: Creation of this material was funded by project# and is made availiab
 ```
 
 ### Removing the banner
-When the trainig material is no longer under active devlopment, remove the banner at the top by removing the following section of the `main.yml`file located in the `overrides` folder:
+When the trainig material is no longer under active devlopment, remove the banner at the top by removing the following section of the `main.html`file located in the `overrides` folder:
 
 ```html
 {% block announce %}
 This lesson is under active development and considered pre-alpha.
 {% endblock %}
 ```
+
+### Changing bioschemas json
+
+In `overrides/main.html` there's also a block `site_meta`: 
+
+```html
+{% block site_meta %}
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org/",
+    "@type": "LearningResource",
+    "@id": "https://elixir-europe-training.github.io/ELIXIR-lesson-template/",
+    "http://purl.org/dc/terms/conformsTo": {
+        "@type": "CreativeWork",
+        "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+    },
+    "description": "Template for ELIXIR lessons",
+    "keywords": "FAIR, OPEN, Bioinformatics, Teaching",
+    "name": "ELIXIR TrP lesson template",
+    "license": "https://creativecommons.org/licenses/by/4.0/"
+}
+</script>
+{% endblock %}
+```
+
+Change and add items to the json according to your requirements. More info on bioschemas TrainingMaterial profile [here](https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE). 
 
 ### Add course content 
 See next chapter for instructions how to add course content 
