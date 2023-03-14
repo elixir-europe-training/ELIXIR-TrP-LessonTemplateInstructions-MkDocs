@@ -42,12 +42,13 @@ Go to settings and select `Collaborators` under `Access` in the left side menu
 
  When the site is deployed, it will take a few minutes, a box on top will display the url to the live site.
 
-#### 2. Go to settings and select actions in the left side menu
+#### 2. Go to settings and select Actions -> General in the left side menu
 
 <figure>
 <img src="../../assets/images/settings_actions.png" width="600"/>
 </figure>
-    
+
+1. at the top under `Actions permissions` check the option "Allow all actions and reusable workflows"     
 1. scroll down to `Workflow permissions`
 1. check the option "Read and Write permissions" 
 
