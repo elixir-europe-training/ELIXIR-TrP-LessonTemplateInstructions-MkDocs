@@ -1,22 +1,24 @@
 # How to set up a new repository based on the ELIXIR-TrP-LessonTemplate-MkDocs"
 
 ## 1.1 Creating a new repository
-#### Go to [https://github.com/elixir-europe-training/ELIXIR-TrP-lesson-template](https://github.com/elixir-europe-training/ELIXIR-TrP-lesson-template), then: 
-#### 1.  Click the green `use template` button to the top right and choose `Create a new repository`. 
+**Go to [https://elixir-europe-training.github.io/ELIXIR-TrP-LessonTemplate-MkDocs/](https://elixir-europe-training.github.io/ELIXIR-TrP-LessonTemplate-MkDocs/), then: **
+
+#### 1.  Click the green `Use this template` button to the top right.
   
- <figure>
-    <img src="../../assets/images/create_from_template.png" width="800"/>
-    </figure>
 In the pop-up window:
 
    1. Choose an organisation where the repository will be hosted
    2. Enter a name for the new repository (keep in mind that this will be part of the URL)
    3. Decide if the repository should be Public (most likely) or Private
    4. Make sure to tick `Include all branches`
-   5. Click `Create repository from template`
+   5. Click **`Create repository from template`**
+
+<figure>
+    <img src="../../assets/images/create_from_template.png" width="800"/>
+</figure>
 
 #### 2. Add collaborators
-Go to settings and select `Collaborators` under `Access` in the left side menu 
+Go to settings and select `Collaborators and teams` under `Access` in the left side menu 
 
 1. Click one of the green buttons `add people`  or `add teams`
 2. Select a person or a team to invite
@@ -25,9 +27,7 @@ Go to settings and select `Collaborators` under `Access` in the left side menu
 
 #### 3. Update the README.md
 1. Go to the `<> Code` tab and click the README.md file
-2. Add information about the new repository
-    - Who has requested this repository
-    - What project or which ELIXIR-node is this repository being used in 
+2. Add information about the new ELIXIR Lesson.
 
 
 ## 1.2 Using github actions to deploy gh-pages
@@ -49,8 +49,7 @@ Go to settings and select `Collaborators` under `Access` in the left side menu
 </figure>
 
 1. at the top under `Actions permissions` check the option "Allow all actions and reusable workflows"     
-1. scroll down to `Workflow permissions`
-1. check the option "Read and Write permissions" 
+2. scroll down to `Workflow permissions`and check the option "Read and Write permissions" 
 
 #### 3. Add URL to About section of the repository
 
@@ -68,16 +67,5 @@ Go to settings and select `Collaborators` under `Access` in the left side menu
 
 #### 4. Update site name, repository name and url in the mkdocs.yml file
 1. Go to the `<> Code` tab and edit the mkdocs.yml file
-2. Update the site name at the top of the file by editing the following
-
-``` yml
-site_name: Instructions how to use the ELIXIR-TrP-LessonTemplate-MkDocs
-```
-
-2. Update the section below with the `repo_name`and `repo_url`
-
-``` yaml
-#Repository
-repo_name: elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
-repo_url: https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
-```
+2. Update the `site_name` tag at the top of the file to the name of your lesson.
+3. Update the **Repository** section with the respective `repo_name`and `repo_url` of the lesson you have just created.
