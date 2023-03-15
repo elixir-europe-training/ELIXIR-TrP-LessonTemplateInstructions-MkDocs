@@ -27,9 +27,9 @@ The left side navigation menu is specified in the `nav:` section of the `mkdocs.
 To add a new item in the menu:
 
 1. Add a new file if needed by:
-    i. navigating to the `docs` folder and then clicking `Add file` on the top right
-    ii. name the new file
-    iii. commit the new file to the `main` branch at the bottom of the page
+    1. navigating to the `docs` folder and then clicking `Add file` on the top right
+    2. name the new file
+    3. commit the new file to the `main` branch at the bottom of the page
 2. Add a row `"title": chapter/filename.md` to the `nav`section of the `mkdocs.yml` file
 
 
