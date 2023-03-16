@@ -222,6 +222,15 @@ You can add social cards to a markdown document in two different ways:
   
 ::/cards::
 ```
+::cards::
+
+- title: Zeus
+  content: |
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    Lorem ipsum dolor sit amet.
+  image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
+  
+::/cards::
 
 **2. Create a yaml file with all the content**
 
