@@ -27,6 +27,8 @@ plugins:
   - search
   - bibtex:
       bib_file: "references.bib"
+  - mkdocs-video # embed videos to the docs
+
   
 # Footer
 copyright: Creation of this material was funded by project# and is made availiable under a CC-BY 4.0 licence
@@ -53,6 +55,7 @@ markdown_extensions:
       options:
         custom_icons:
           - overrides/.icons
+  - neoteroi.cards
 
 extra_css:
   - stylesheets/extra.css
