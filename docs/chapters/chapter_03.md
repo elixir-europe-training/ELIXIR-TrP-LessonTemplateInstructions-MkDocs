@@ -205,6 +205,44 @@ Tables are created with pipes `|` and hyphens `-`. Hyphens are used to create ea
 | 10:00 	| 10:30 	| coffee! 	|
 | 12:00 	| 13:00 	| lunch!  	|
 
+### Authors cards
+
+You can add social cards to a markdown document in two different ways:
+
+**1. Write directly on the markdown file with URL or local image**
+
+```
+::cards::
+
+- title: Zeus
+  content: |
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    Lorem ipsum dolor sit amet.
+  image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
+  
+::/cards::
+```
+
+**2. Create a yaml file with all the content**
+
+You can create a yaml file with the content like this:
+
+```
+- title: Zeus
+  content: |
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    Lorem ipsum dolor sit amet.
+  image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
+  
+```
+
+And then add to a markdown file like this:
+
+```
+[cards cols="3"(./docs/assets/cards/card_example.yaml)]
+```
+
+By default you can only provide 1 to 6 columns.
 
 ## Adding additional content
 
