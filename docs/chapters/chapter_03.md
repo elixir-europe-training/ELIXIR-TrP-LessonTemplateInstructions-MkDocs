@@ -210,8 +210,10 @@ Tables are created with pipes `|` and hyphens `-`. Hyphens are used to create ea
 You can add social cards to a markdown document in two different ways:
 
 **1. Write directly on the markdown file with URL or local image**
+*Note: Make sure to leave blank lines before and after!*
 
 ```
+
 ::cards::
 
 - title: Zeus
@@ -221,7 +223,9 @@ You can add social cards to a markdown document in two different ways:
   image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
   
 ::/cards::
+
 ```
+
 ::cards::
 
 - title: Zeus
