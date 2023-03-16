@@ -244,6 +244,17 @@ And then add to a markdown file like this:
 
 By default you can only provide 1 to 6 columns.
 
+### Add videos
+
+You can also embed videos from a local source (with a relative path) or from an url (like youtube). To use a youtube URL, 
+just attach the ID of the video to a youtube embedded video link: `https://youtube.com/embed/`. For example, the Elixir training video `https://youtu.be/oAD8FdGf8tI` has the ID `oAD8FdGf8tI`, so the final link would be:
+
+```
+![type:video](https://youtube.com/embed/oAD8FdGf8tI)
+```
+
+![type:video](https://youtube.com/embed/oAD8FdGf8tI)
+
 ## Adding additional content
 
  For more advanced functionality, visit the [mkdocs material webpage](https://squidfunk.github.io/mkdocs-material/). For example for information on how to display [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/). 
