@@ -1,8 +1,16 @@
-# Instructions for [ELIXIR-TrP-LessonTemplate-MkDocs](https://github.com/elixir-europe-training/ELIXIR-lesson-template) 
+# Elixir Training Lesson template
 
-The website is generated with [MkDocs](https://www.mkdocs.org/), with the theme [Material](https://squidfunk.github.io/mkdocs-material/).
+For instruction on how to use the template, please follow this documentation: 
+https://elixir-europe-training.github.io/ELIXIR-TrP-LessonTemplateInstructions-MkDocs/
+
+
+**Any issues?** Contact Geert van Geest (@GeertvanGeest) 
+
+
 
 ## If working locally
+
+This website is generated with [MkDocs](https://www.mkdocs.org/), with the theme [Material](https://squidfunk.github.io/mkdocs-material/).
 
 To host it locally, install MkDocs:
 ```bash
@@ -23,8 +31,6 @@ Clone this repository to your local computer. Then, make the repository your cur
 mkdocs serve
 ```
 
-to host it locally and check it out with your browser at [http://localhost:8000/](http://localhost:8000/).
+To host it locally.
 
-## If using the Github editor 
-If you commit to the branch `main` (the default branch), the website will be automatically updated in 30-60 seconds.
-
+Check it out with your browser at [http://localhost:8000/](http://localhost:8000/).
