@@ -49,7 +49,7 @@ Go to settings and select `Collaborators and teams` under `Access` in the left s
 </figure>
 
 1. at the top under `Actions permissions` check the option "Allow all actions and reusable workflows"     
-2. scroll down to `Workflow permissions`and check the option "Read and Write permissions" 
+2. scroll down to `Workflow permissions`and check the options "Read and Write permissions" + "Allow GitHub Actions to create and approve pull requests"
 
 #### 3. Add URL to About section of the repository
 
