@@ -1,7 +1,7 @@
 # How to set up a new repository based on the ELIXIR-TrP-LessonTemplate-MkDocs"
 
 ## 1.1 Creating a new repository
-**Go to [https://elixir-europe-training.github.io/ELIXIR-TrP-LessonTemplate-MkDocs/](https://elixir-europe-training.github.io/ELIXIR-TrP-LessonTemplate-MkDocs/), then: **
+**Go to [https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplate-MkDocs](https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplate-MkDocs), then: **
 
 #### 1.  Click the green `Use this template` button to the top right.
   
