@@ -1,4 +1,8 @@
+
+
 ## Using the GitHub editor
+
+You can modify and change the mardown and configuration files in whatever way you are used to. However, if you're not familiar with git, you can use the GitHub editor to make changes to the content.
 
 First, you will need to be able to edit this repository. Ask for permissions at the repository admins. 
 
@@ -33,12 +37,43 @@ and review your changes by clicking the `preview` tab.
 After commiting it will take ~30-60 seconds before the website is updated with your changes. The website URL can be found to the right on the first page of the repository. 
 
 ## Adding specific elements
+
 In addition to adding text and other content in markdown, this template is based on the theme [material](https://squidfunk.github.io/mkdocs-material/) which has many fancy extensions, like [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) that can be used as well. 
 
 ### Authors
-Add Authors manually to the index.md page.
+
+You can add the authors as 'cards' to the `index.md` file. In order to do this add a chunk in squared brackets `[]` to the `index.md` file like this:
+
+```md
+[cards class_name="authors" cols="3"(docs/assets/cards/author_cards.yaml)]
+```
+
+This is the placeholder for the authors cards. The authors are defined in a yaml file in the `docs/assets/cards` folder. The yaml file should look like this:
+
+```yaml
+- title: Zeus
+  content: |
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    Lorem ipsum dolor sit amet.
+  image: ./assets/images/cards/001-zeus.png
+
+- title: Athena
+  content: |
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    Lorem ipsum dolor sit amet.
+  image: ./assets/images/cards/003-athena.png
+
+- title: Poseidon
+  content: |
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    Lorem ipsum dolor sit amet.
+  image: ./assets/images/cards/007-poseidon.png
+```
+
+Modify the content of the cards by modifying the yaml file.
 
 ### Boxed sections 
+
 If you want to highlight some information you can make use of [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/). 
 
 Create a box by adding three exclamation marks `!!!` followed by the keyword `info` followed by the desiered title inside  quotation marks `"Title"`. The content of the block follows on the next line, indented by four spaces:
@@ -54,6 +89,7 @@ Create a box by adding three exclamation marks `!!!` followed by the keyword `in
 Boxed sections are also used for creating [Exercises](#Exercises).
 
 ### Code blocks
+
 To call out a command or code within a sentence, use single backticks around the code. 
 ```markdown
 To create a new line in the document press `Enter`.
@@ -72,9 +108,11 @@ To display example code into its own distinct block, use triple backticks ` ``` 
 For syntax highlighting, line numbers, titles etc. refer to the material [documentation](https://squidfunk.github.io/mkdocs-material/reference/code-blocks)
 
 ### Contributors
+
 Add contributors manually to the index.md page.
 
 ### Exercises
+
 In order to highlight exercises with expandable solutions you can make use of nested [boxed sections](#boxed-sections).
 ```
 !!! example "Exercise"
@@ -91,6 +129,7 @@ In order to highlight exercises with expandable solutions you can make use of ne
         this is the soluiton to the question
 
 ### Headings
+
 In markdown, headings are created by adding one to six `#` followed by a space before your heading text. The number of `#` will indicate the level of the heading. The more you add, the smaller the heading will be.
 
 To create a heading, add one to six # symbols before your heading text. The number of # you use will determine the size of the heading.

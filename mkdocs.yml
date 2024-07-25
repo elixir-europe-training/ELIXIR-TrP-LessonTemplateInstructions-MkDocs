@@ -1,11 +1,10 @@
-site_name: Instructions how to use the ELIXIR-TrP-LessonTemplate-MkDocs
+site_name: ELIXIR lesson template instructions
+
 nav:
-    - About: index.md
-    - Instructions for Template Maintainers:
-        - Setting up a new repository: chapters/chapter_01.md
-    - Instructions for Template Users:
-        - Customize the repository: chapters/chapter_02.md
-        - Adding content using GitHub editor: chapters/chapter_03.md
+    - Home: index.md
+    - Setting up a new repository: chapters/chapter_01.md
+    - Customize the repository: chapters/chapter_02.md
+    - Adding content: chapters/chapter_03.md
     
 
 theme:
@@ -52,12 +51,13 @@ markdown_extensions:
   - pymdownx.tabbed
   - pymdownx.details
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
       options:
         custom_icons:
           - overrides/.icons
   - neoteroi.cards
+  - addbioschemas
 
 extra_css:
   - stylesheets/extra.css
