@@ -119,14 +119,14 @@ In order to highlight exercises with expandable solutions you can make use of ne
     This is a question
 
     ??? success "Solution"
-        this is the soluiton to the question
+        this is the solution to the question
 ```
 
 !!! example "Exercise"
     This is a question
 
     ??? success "Solution"
-        this is the soluiton to the question
+        this is the solution to the question
 
 ### Headings
 
