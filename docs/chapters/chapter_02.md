@@ -18,8 +18,14 @@ This file is where most of the layout options are made and where the [MkDocs](ht
 This file is displayed by default on the main page of the GitHub repository and liked in the About section. It should contain important information about the repository on how to use the material and explain how to contribute. 
 
 ### LICENCE.md
+This file is linked in the `About section` of the GitHub repository and should contain a full licence statement. By default it is set to the Creative Commons [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/legalcode). This file is also used to specify the licence for the Zenodo record of the lesson if using the Zenodo-Github integration.
 
-This file is linked in the About section of the GitHub repository and should contain a full licence statement. By default it is set to the Creative Commons [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license](https://creativecommons.org/licenses/by-sa/4.0/legalcode)
+### .zenodo.json
+This file is used to specify metadata for the Zenodo record of the lesson. It is empty by default. Refer to the [Credit and recognition chapter](../chapters/chapter_04.md#prepare-a-zenodojson-file) for instructions on how to populate this file. 
+
+### CITATION.CFF
+This file is used to specify metadata for the lesson in a format that can be used by the [Citation File Format (CFF)](https://citation-file-format.github.io/). It is used to provide information about how to cite the lesson in the `About section` of the GitHub repository. As a default, this file contains citation information for the lesson template itself. You need to edit this file to provide citation information for your lesson.
+
 
 ### docs folder
 

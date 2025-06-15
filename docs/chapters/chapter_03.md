@@ -40,37 +40,51 @@ After commiting it will take ~30-60 seconds before the website is updated with y
 
 In addition to adding text and other content in markdown, this template is based on the theme [material](https://squidfunk.github.io/mkdocs-material/) which has many fancy extensions, like [admonitions](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) that can be used as well. 
 
-### Authors
+### Author cards
 
-You can add the authors as 'cards' to the `index.md` file. In order to do this add a chunk in squared brackets `[]` to the `index.md` file like this:
+You can add the authors as 'cards' to the `index.md` file
+
+::cards::
+
+- title: Zeus
+  content: |
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:material-linkedin:](https://linkedin.com/)<br>
+    Lorem ipsum dolor sit amet.
+  image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
+  
+::/cards::
+
+In order to do this add a placeholder chunk in squared brackets `[]` to the `index.md` file like this:
 
 ```md
 [cards class_name="authors" cols="3"(docs/assets/cards/author_cards.yaml)]
 ```
 
-This is the placeholder for the authors cards. The authors are defined in a yaml file in the `docs/assets/cards` folder. The yaml file should look like this:
+>This will render the author cards in a grid with 3 columns. You can change the number of columns by changing the `cols` parameter between 1 and 6.
+
+The authors are defined in a the `author_cards.yaml` file in the `docs/assets/cards` folder. The yaml file should look like this:
 
 ```yaml
 - title: Zeus
   content: |
-    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:material-linkedin:](https://linkedin.com/)<br>
     Lorem ipsum dolor sit amet.
   image: ./assets/images/cards/001-zeus.png
 
 - title: Athena
   content: |
-    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:material-linkedin:](https://linkedin.com/)<br>
     Lorem ipsum dolor sit amet.
   image: ./assets/images/cards/003-athena.png
 
 - title: Poseidon
   content: |
-    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
+    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:material-linkedin:](https://linkedin.com/)<br>
     Lorem ipsum dolor sit amet.
   image: ./assets/images/cards/007-poseidon.png
 ```
 
-Modify the content of the cards by modifying the yaml file.
+Also remember to add authors to the .zenodo.json and CITATION.CFF files in the root of the repository. 
 
 ### Boxed sections 
 
@@ -107,9 +121,16 @@ To display example code into its own distinct block, use triple backticks ` ``` 
 ``` 
 For syntax highlighting, line numbers, titles etc. refer to the material [documentation](https://squidfunk.github.io/mkdocs-material/reference/code-blocks)
 
-### Contributors
+### Contributor cards
+Contributor cards can be added to the `index.md` file in a similar way as author cards. But is defined in a separate file `contributor_cards.yaml` in the `docs/assets/cards` folder. 
 
-Add contributors manually to the index.md page.
+The placeholder chnk for the contributor cards should look like this:
+
+```md
+[cards class_name="contributors" cols="6"(./docs/assets/cards/contributor_cards.yaml)]
+```
+
+Also remember to add contributors to the .zenodo.json and CITATION.CFF files in the root of the repository. 
 
 ### Exercises
 
@@ -244,59 +265,9 @@ Tables are created with pipes `|` and hyphens `-`. Hyphens are used to create ea
 | 10:00 	| 10:30 	| coffee! 	|
 | 12:00 	| 13:00 	| lunch!  	|
 
-### Authors cards
 
-You can add social cards to a markdown document in two different ways:
 
-**1. Write directly on the markdown file with URL or local image**
-*Note: Make sure to leave blank lines before and after!*
-
-```
-
-::cards::
-
-- title: Zeus
-  content: |
-    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
-    Lorem ipsum dolor sit amet.
-  image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
-  
-::/cards::
-
-```
-
-::cards::
-
-- title: Zeus
-  content: |
-    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
-    Lorem ipsum dolor sit amet.
-  image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
-  
-::/cards::
-
-**2. Create a yaml file with all the content**
-
-You can create a yaml file with the content like this:
-
-```
-- title: Zeus
-  content: |
-    [:custom-orcid:](https://orcid.org/) [:simple-github:](https://github.com/) [:simple-linkedin:](https://linkedin.com/)<br>
-    Lorem ipsum dolor sit amet.
-  image: https://raw.githubusercontent.com/Neoteroi/mkdocs-plugins-docs/main/docs/img/icons/001-zeus.png
-  
-```
-
-And then add to a markdown file like this:
-
-```
-[cards cols="3"(./docs/assets/cards/card_example.yaml)]
-```
-
-By default you can only provide 1 to 6 columns.
-
-### Add videos
+### Videos
 
 You can also embed videos from a local source (with a relative path) or from an url (like youtube). To use a youtube URL, 
 just attach the ID of the video to a youtube embedded video link: `https://youtube.com/embed/`. For example, the Elixir training video `https://youtu.be/oAD8FdGf8tI` has the ID `oAD8FdGf8tI`, so the final link would be:
