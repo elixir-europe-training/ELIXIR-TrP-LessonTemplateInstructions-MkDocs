@@ -1,4 +1,4 @@
-In order for authors and contributors to be recognized and get credit for their contributions to the training material they should be listed in the `About` page according to the instructions under [adding content](../chapters/chapter_03.md#adding-specific-elements). In addition, making use of persistent identifiers such as DOIs for the lesson itself and ORCIDs for authors and contributors is recommended. 
+It is important that authors and contributors are recognized and get credit for their contributions to the training material. To incorporate author information in the lesson website you can list them in the `About` page (more information [here](../chapters/chapter_03.md#adding-specific-elements)). Currently, this information is not linked to any other records or metadata associated with the lesson. Therefore, below we provide instruction for making use of persistent identifiers for the lesson itself and linking ORCIDs for authors to the lesson. 
 
 ## DOIs using the Zenodo-GitHub integration
 
