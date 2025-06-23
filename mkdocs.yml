@@ -5,6 +5,7 @@ nav:
     - Setting up a new repository: chapters/chapter_01.md
     - Customize the repository: chapters/chapter_02.md
     - Adding content: chapters/chapter_03.md
+    - Credit and recognition: chapters/chapter_04.md
     
 
 theme:
