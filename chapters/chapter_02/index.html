@@ -1,0 +1,723 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../chapter_01/">
+      
+      
+        <link rel="next" href="../chapter_03/">
+      
+      
+      <link rel="icon" href="../../assets/images/elixir_favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Customize the repository - ELIXIR lesson template instructions</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Lato";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../stylesheets/neoteroi-mkdocs.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#file-structure-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ELIXIR lesson template instructions" class="md-header__button md-logo" aria-label="ELIXIR lesson template instructions" data-md-component="logo">
+      
+  <img src="../../assets/images/white-orange-logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ELIXIR lesson template instructions
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Customize the repository
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ELIXIR lesson template instructions" class="md-nav__button md-logo" aria-label="ELIXIR lesson template instructions" data-md-component="logo">
+      
+  <img src="../../assets/images/white-orange-logo.png" alt="logo">
+
+    </a>
+    ELIXIR lesson template instructions
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    elixir-europe-training/ELIXIR-TrP-LessonTemplateInstructions-MkDocs
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_01/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Setting up a new repository
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Customize the repository
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Customize the repository
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#file-structure-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      File structure overview
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="File structure overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#indexmd" class="md-nav__link">
+    <span class="md-ellipsis">
+      index.md
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      mkdocs.yml
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#readmemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      README.md
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#licencemd" class="md-nav__link">
+    <span class="md-ellipsis">
+      LICENCE.md
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zenodojson" class="md-nav__link">
+    <span class="md-ellipsis">
+      .zenodo.json
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#citationcff" class="md-nav__link">
+    <span class="md-ellipsis">
+      CITATION.CFF
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#docs-folder" class="md-nav__link">
+    <span class="md-ellipsis">
+      docs folder
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-new-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      Customizing the new repository
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Customizing the new repository">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#aboutindex-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      About/index page
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addingremoving-menu-items" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding/removing menu items
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modify-the-footer" class="md-nav__link">
+    <span class="md-ellipsis">
+      Modify the footer
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing-the-banner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Removing the banner
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-bioschemas-markup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Adding bioschemas markup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#add-course-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      Add course content
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_03/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding content
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chapter_04/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Credit and recognition
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+  <h1>Customize the repository</h1>
+
+<div><h2 id="file-structure-overview">File structure overview</h2>
+<p>The most important files in the repository are markdown (<code>.md</code>) files, containing the website content, and configuration files that specify the layout and theme of the website. The most important configuration file is <code>mkdocs.yml</code> which specifies the layout and theme of the website. Below we explain the most important files and how to customize them.</p>
+<p>The template is based on <a href="https://squidfunk.github.io/mkdocs-material/">mkdocs material</a>, so most features are inherited from this theme, and ample documentation can be found on their <a href="https://squidfunk.github.io/mkdocs-material/">website</a>.</p>
+<h3 id="indexmd">index.md</h3>
+<p>This file renders the home page of the website and is found in the <code>/docs</code>folder. This is the first page a visitor to the website will see when using the base URL. It is by default called <code>About</code>in this template. It contains information about the trainig material.</p>
+<h3 id="mkdocsyml">mkdocs.yml</h3>
+<p>This file is where most of the layout options are made and where the <a href="https://www.mkdocs.org/">MkDocs</a> theme <a href="https://squidfunk.github.io/mkdocs-material/">Material</a> is specified. The navigation menu is customised here as well as the header and footer etc. </p>
+<h3 id="readmemd">README.md</h3>
+<p>This file is displayed by default on the main page of the GitHub repository and liked in the About section. It should contain important information about the repository on how to use the material and explain how to contribute. </p>
+<h3 id="licencemd">LICENCE.md</h3>
+<p>This file is linked in the <code>About section</code> of the GitHub repository and should contain a full licence statement. By default it is set to the Creative Commons <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) license</a>. This file is also used to specify the licence for the Zenodo record of the lesson if using the Zenodo-Github integration.</p>
+<h3 id="zenodojson">.zenodo.json</h3>
+<p>This file is used to specify metadata for the Zenodo record of the lesson. It is empty by default. Refer to the <a href="../chapter_04/#prepare-a-zenodojson-file">Credit and recognition chapter</a> for instructions on how to populate this file. </p>
+<h3 id="citationcff">CITATION.CFF</h3>
+<p>This file is used to specify metadata for the lesson in a format that can be used by the <a href="https://citation-file-format.github.io/">Citation File Format (CFF)</a>. It is used to provide information about how to cite the lesson in the <code>About section</code> of the GitHub repository. As a default, this file contains citation information for the lesson template itself. You need to edit this file to provide citation information for your lesson.</p>
+<h3 id="docs-folder">docs folder</h3>
+<p>The docs folder contains several subfolders</p>
+<ul>
+<li><code>/chapters</code> contains documents for course content, one <code>chapter_X.md</code> per topic</li>
+<li><code>/assets/images</code> contains images that are embedded in the course content</li>
+</ul>
+<h2 id="customizing-the-new-repository">Customizing the new repository</h2>
+<h3 id="aboutindex-page">About/index page</h3>
+<p>Start by adding information to the About page (index.md).</p>
+<h3 id="addingremoving-menu-items">Adding/removing menu items</h3>
+<p>The left side navigation menu is specified in the <code>nav:</code> section of the <code>mkdocs.yml</code>file.  Add the title to be displayed in the menu for each chapter like this: <code>"title": chapters/filename.md</code> followed by the file name of the chapter. </p>
+<p>To add a new item in the menu:</p>
+<ol>
+<li>Add a new file if needed by:<ol>
+<li>navigating to the <code>docs</code> folder and then clicking <code>Add file</code> on the top right</li>
+<li>name the new file</li>
+<li>commit the new file to the <code>main</code> branch at the bottom of the page</li>
+</ol>
+</li>
+<li>Add a row <code>"title": chapter/filename.md</code> to the <code>nav</code>section of the <code>mkdocs.yml</code> file</li>
+</ol>
+<h3 id="modify-the-footer">Modify the footer</h3>
+<p>Modify the Licence statement in the footer by editing the following section of the <code>mkdocs.yml</code> file</p>
+<div class="highlight"><pre><span></span><code># Footer
+copyright: Creation of this material was funded by project# and is made availiable under a CC-BY 4.0 licence
+</code></pre></div>
+<h3 id="removing-the-banner">Removing the banner</h3>
+<p>When the training material is no longer under active devlopment, remove the banner at the top by removing the following section of the <code>main.html</code>file located in the <code>overrides</code> folder:</p>
+<div class="highlight"><pre><span></span><code>{% block announce %}
+This lesson is under active development and considered pre-alpha.
+{% endblock %}
+</code></pre></div>
+<h3 id="adding-bioschemas-markup">Adding bioschemas markup</h3>
+<p>For adding metadata to your training material, it is recommended to use <a href="https://bioschemas.org/">bioschemas</a> markup. More info on bioschemas TrainingMaterial profile <a href="https://bioschemas.org/profiles/TrainingMaterial">here</a>. </p>
+<p>To add bioschemas to your website html use the extension <a href="https://pypi.org/project/addbioschemas/"><code>addbioschemas</code></a>. Everything should be set up in the template to use this extension.</p>
+<p>To add metadata create either a json or yaml file with bioschemas markup. In the template, an example is stored in <code>_data</code>:</p>
+<div class="highlight"><span class="filename">_data/metadata.yml</span><pre><span></span><code><span class="s">"@context"</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://schema.org/</span>
+<span class="s">"@type"</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">LearningResource</span>
+<span class="s">"@id"</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://elixir-europe-training.github.io/ELIXIR-TrP-LessonTemplate-MkDocs/</span>
+<span class="nt">http://purl.org/dc/terms/conformsTo</span><span class="p">:</span>
+<span class="w">  </span><span class="s">"@type"</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CreativeWork</span>
+<span class="w">  </span><span class="s">"@id"</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Template for ELIXIR lessons</span>
+<span class="nt">keywords</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FAIR, OPEN, Bioinformatics, Teaching</span>
+<span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ELIXIR Training Lesson template</span>
+<span class="c1"># lookup at https://spdx.org/licenses/</span>
+<span class="nt">license</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CC-BY-4.0</span>
+<span class="nt">author</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"@type"</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Geert van Geest</span>
+<span class="w">  </span><span class="nt">email</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">geert.vangeest@sib.swiss</span>
+<span class="w">  </span><span class="nt">github</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">GeertvanGeest</span>
+<span class="w">  </span><span class="nt">orcid</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0000-0002-1561-078X</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="s">"@type"</span><span class="p p-Indicator">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
+<span class="w">  </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Elin Kronander</span>
+<span class="w">  </span><span class="nt">github</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">elinkronander</span>
+<span class="w">  </span><span class="nt">orcid</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">0000-0003-0280-6318</span>
+</code></pre></div>
+<p>After that, add a placeholder in the markdown file you’d like to add the metadata to:</p>
+<div class="highlight"><pre><span></span><code>[add-bioschemas file='_data/metadata.yml']
+</code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Markdown before placeholder</p>
+<p>In combination with mkdocs-material the placeholder should be placed after markdown text, so never at the very top of the page. See this <a href="https://github.com/GeertvanGeest/addbioschemas/issues/5">GitHub issue</a>. </p>
+</div>
+<!-- This wi ll result in a formatted json-LD script tag in the html body.  -->
+
+<h3 id="add-course-content">Add course content</h3>
+<p>See next chapter for instructions how to add course content </p></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../chapter_01/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Setting up a new repository">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Setting up a new repository
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../chapter_03/" class="md-footer__link md-footer__link--next" aria-label="Next: Adding content">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Adding content
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Creation of this material was funded by project# and is made availiable under a CC-BY 4.0 licence
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.footer", "toc.integrate"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
