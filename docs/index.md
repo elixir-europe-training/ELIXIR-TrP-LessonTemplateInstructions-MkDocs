@@ -3,6 +3,9 @@ Are you developing a lesson for ELIXIR?
 
 [add-bioschemas file='_data/bioschemas.json']
 
+!!! warning
+    MkDocs 2.0, the underlying framework of Material for MkDocs, will introduce backward-incompatible changes. Therefore, this template will stop working sooner or later. We are currently working on a solution. 
+
 This repository contains instructions on how to use the [template](https://github.com/elixir-europe-training/ELIXIR-lesson-template) for creating a lesson. Ready to launch?
 
 [:rocket: Get started!](chapters/chapter_01.md){: .md-button }
