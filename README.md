@@ -1,3 +1,7 @@
+# MkDocs material will stop being maintained
+
+The instructions for this website are based on mkdocs. We recommend new project to work with the [zensical template](https://github.com/elixir-europe-training/ELIXIR-TrP-LessonTemplate-zensical).
+
 # Instructions for [ELIXIR-TrP-LessonTemplate-MkDocs](https://github.com/elixir-europe-training/ELIXIR-lesson-template) 
 
 The website is generated with [MkDocs](https://www.mkdocs.org/), with the theme [Material](https://squidfunk.github.io/mkdocs-material/).
